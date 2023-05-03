@@ -1,0 +1,57 @@
+/* Definir el estilo de la carta */
+.card {
+    background-color: #ffffff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    padding: 20px;
+    max-width: 500px;
+  }
+  
+  /* Definir el estilo del contenido de la carta */
+  .card-content {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+  
+  .card-image {
+    flex: 1;
+    margin-right: 20px;
+  }
+  
+  .card-image img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+  }
+  
+  .card-details {
+    flex: 2;
+  }
+  
+  .card-details h5 {
+    font-size: 1.2em;
+    margin-top: 0;
+    margin-bottom: 10px;
+  }
+  
+  .card-details p {
+    font-size: 1em;
+    margin-top: 0;
+    margin-bottom: 10px;
+  }
+  
+  .card-details button {
+    background-color: #1a237e;
+    color: #ffffff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .card-details button:hover {
+    background-color: #111865;
+  }

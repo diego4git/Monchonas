@@ -1,10 +1,87 @@
 @charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0;
+}
+
 /* Layout **/
 .logo-img {
-  float: left;
-  width: 10rem;
-  height: 8rem;
+  width: 40%;
+  height: auto;
   background: none;
+  margin: 0;
+  padding: 0;
+}
+
+/* Definir el estilo de la carta */
+.card {
+  background-color: #ffffff;
+  -webkit-box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  padding: 20px;
+  max-width: 500px;
+}
+
+/* Definir el estilo del contenido de la carta */
+.card-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.card-image {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  margin-right: 20px;
+}
+
+.card-image img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+.card-details {
+  -webkit-box-flex: 2;
+      -ms-flex: 2;
+          flex: 2;
+}
+
+.card-details h5 {
+  font-size: 1.2em;
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+
+.card-details p {
+  font-size: 1em;
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+
+.card-details button {
+  background-color: #1a237e;
+  color: #ffffff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 4px;
+  font-size: 1em;
+  cursor: pointer;
+  -webkit-transition: background-color 0.3s ease;
+  transition: background-color 0.3s ease;
+}
+
+.card-details button:hover {
+  background-color: #111865;
 }
 
 /*!
