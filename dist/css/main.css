@@ -13,7 +13,7 @@
   padding: 0;
 }
 
-/* Definir el estilo de la carta */
+/* Estilo de la carta */
 .card {
   background-color: #ffffff;
   -webkit-box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
@@ -23,7 +23,7 @@
   max-width: 500px;
 }
 
-/* Definir el estilo del contenido de la carta */
+/*Estilo del contenido de la carta */
 .card-content {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -82,6 +82,14 @@
 
 .card-details button:hover {
   background-color: #111865;
+}
+
+.footer-ul {
+  list-style: none;
+}
+
+.footer-a {
+  text-decoration: none;
 }
 
 /*!

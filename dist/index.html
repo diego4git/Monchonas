@@ -39,7 +39,8 @@
           <!-- Collapse btn end -->
 
           <!-- List and dropdowns -->
-          <div class="collapse navbar-collapse" id="navbarNav">
+          <div class="collapse navbar-collapse align-content-end"
+            id="navbarNav">
             <ul class="navbar-nav">
               <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown"
@@ -74,8 +75,10 @@
                   More
                 </a>
                 <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                  <li><a class="dropdown-item" href="#">Log Up</a></li> <!-- Crear cuenta -->
+                  <li><a class="dropdown-item" href="./registro.html">Log Up</a></li>
+                  <!-- Crear cuenta -->
                   <li><a class="dropdown-item" href="#">Sing In</a></li> <!-- Iniciar sesion -->
+                  <li><a class="dropdown-item" href="#">Sing out</a></li> <!-- Cerrar sesion -->
                 </ul>
               </li>
             </ul>
@@ -86,7 +89,11 @@
           <form class="d-flex">
             <input class="form-control me-2" type="search" placeholder="Search"
               aria-label="Search">
-            <button class="btn btn-outline-danger" type="submit">Search</button>
+            <button class="btn btn-danger">
+              <img src="./images/Icons/Search-light.png" alt="Search"
+                width="20">
+
+            </button>
           </form>
           <!-- Search form end -->
         </div>
@@ -96,286 +103,354 @@
     </header>
     <main>
 
-    <section class="container-fluid bg-light">
-      <!-- Filters -->
-      <section class="row">
-        <nav class="navbar navbar-expand-lg">
-          <div class="container-fluid">
+      <section class="container-fluid bg-light">
+        <!-- Filters -->
+        <section class="row">
+          <nav class="navbar navbar-expand-lg">
+            <div class="container-fluid">
 
-            <div class="btn-group btn-group-toggle d-flex flex-wrap"
-              data-toggle="buttons">
-              <ul class="nav nav-pills">
+              <div class="btn-group btn-group-toggle d-flex flex-wrap"
+                data-toggle="buttons">
+                <ul class="nav nav-pills">
 
-                <li class="nav-item px-1 py-1">
-                  <button class="btn btn-warning" aria-current="page">All</button>
+                  <li class="nav-item px-1 py-1">
+                    <button class="btn btn-warning" aria-current="page">All</button>
+                  </li>
+
+                  <li class="nav-item px-1 py-1">
+                    <button class="btn btn-warning" aria-current="page">BreakFasts</button>
+                  </li>
+
+                  <li class="nav-item px-1 py-1">
+                    <button class="btn btn-warning" aria-current="page">Drinks</button>
+                  </li>
+
+                  <li class="nav-item px-1 py-1">
+                    <button class="btn btn-warning" aria-current="page">Entrees</button>
+                  </li>
+
+                  <li class="nav-item px-1 py-1">
+                    <button class="btn btn-warning" aria-current="page">Lunches</button>
+                  </li>
+
+                  <li class="nav-item px-1 py-1">
+                    <button class="btn btn-warning" aria-current="page">Desserts</button>
+                  </li>
+
+                  <li class="nav-item px-1 py-1">
+                    <button class="btn btn-warning" aria-current="page">Soups</button>
+                  </li>
+
+                </ul>
+              </div>
+
+            </div>
+          </nav>
+        </section>
+        <!-- Filters end -->
+
+        <!-- All recipes  -->
+        <section class="row">
+          <div class="col ps-4 mt-3">
+            <h2>Recipes</h2>
+          </div>
+          <div class="row">
+            <div class="col-md-4 my-3">
+              <div class="card">
+                <div class="card-content">
+                  <div class="card-image">
+                    <img src="./images/recipes/pollo.jpg" alt="Descripción de la
+                      imagen">
+                  </div>
+                  <div class="card-details">
+                    <h5>Recipe name</h5>
+                    <p>Category</p>
+                    <p>Time</p>
+                    <p>Difficulty</p>
+                    <div class="text-end">
+                      <button>Recipe details</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- All recipes end -->
+
+        <!-- Top 10 -->
+        <section class="row">
+          <div class="col ps-4 pt-3">
+            <h2>Top 10</h2>
+          </div>
+          <div class="row">
+            <div class="col-md-4 my-3">
+              <div class="card">
+                <div class="card-content">
+                  <div class="card-image">
+                    <img src="./images/recipes/pollo.jpg" alt="Descripción de la
+                      imagen">
+                  </div>
+                  <div class="card-details">
+                    <h5>Recipe name</h5>
+                    <p>Category</p>
+                    <p>Time</p>
+                    <p>Difficulty</p>
+                    <div class="text-end">
+                      <button>Recipe details</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4 my-3">
+              <div class="card">
+                <div class="card-content">
+                  <div class="card-image">
+                    <img src="./images/recipes/pollo.jpg" alt="Descripción de la
+                      imagen">
+                  </div>
+                  <div class="card-details">
+                    <h5>Recipe name</h5>
+                    <p>Category</p>
+                    <p>Time</p>
+                    <p>Difficulty</p>
+                    <div class="text-end">
+                      <button>Recipe details</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4 my-3">
+              <div class="card">
+                <div class="card-content">
+                  <div class="card-image">
+                    <img src="./images/recipes/pollo.jpg" alt="Descripción de la
+                      imagen">
+                  </div>
+                  <div class="card-details">
+                    <h5>Recipe name</h5>
+                    <p>Category</p>
+                    <p>Time</p>
+                    <p>Difficulty</p>
+                    <div class="text-end">
+                      <button>Recipe details</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4 my-3">
+              <div class="card">
+                <div class="card-content">
+                  <div class="card-image">
+                    <img src="./images/recipes/pollo.jpg" alt="Descripción de la
+                      imagen">
+                  </div>
+                  <div class="card-details">
+                    <h5>Recipe name</h5>
+                    <p>Category</p>
+                    <p>Time</p>
+                    <p>Difficulty</p>
+                    <div class="text-end">
+                      <button>Recipe details</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4 my-3">
+              <div class="card">
+                <div class="card-content">
+                  <div class="card-image">
+                    <img src="./images/recipes/pollo.jpg" alt="Descripción de la
+                      imagen">
+                  </div>
+                  <div class="card-details">
+                    <h5>Recipe name</h5>
+                    <p>Category</p>
+                    <p>Time</p>
+                    <p>Difficulty</p>
+                    <div class="text-end">
+                      <button>Recipe details</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4 my-3">
+              <div class="card">
+                <div class="card-content">
+                  <div class="card-image">
+                    <img src="./images/recipes/pollo.jpg" alt="Descripción de la
+                      imagen">
+                  </div>
+                  <div class="card-details">
+                    <h5>Recipe name</h5>
+                    <p>Category</p>
+                    <p>Time</p>
+                    <p>Difficulty</p>
+                    <div class="text-end">
+                      <button>Recipe details</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4 my-3">
+              <div class="card">
+                <div class="card-content">
+                  <div class="card-image">
+                    <img src="./images/recipes/pollo.jpg" alt="Descripción de la
+                      imagen">
+                  </div>
+                  <div class="card-details">
+                    <h5>Recipe name</h5>
+                    <p>Category</p>
+                    <p>Time</p>
+                    <p>Difficulty</p>
+                    <div class="text-end">
+                      <button>Recipe details</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4 my-3">
+              <div class="card">
+                <div class="card-content">
+                  <div class="card-image">
+                    <img src="./images/recipes/pollo.jpg" alt="Descripción de la
+                      imagen">
+                  </div>
+                  <div class="card-details">
+                    <h5>Recipe name</h5>
+                    <p>Category</p>
+                    <p>Time</p>
+                    <p>Difficulty</p>
+                    <div class="text-end">
+                      <button>Recipe details</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4 my-3">
+              <div class="card">
+                <div class="card-content">
+                  <div class="card-image">
+                    <img src="./images/recipes/pollo.jpg" alt="Descripción de la
+                      imagen">
+                  </div>
+                  <div class="card-details">
+                    <h5>Recipe name</h5>
+                    <p>Category</p>
+                    <p>Time</p>
+                    <p>Difficulty</p>
+                    <div class="text-end">
+                      <button>Recipe details</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4 my-3">
+              <div class="card">
+                <div class="card-content">
+                  <div class="card-image">
+                    <img src="./images/recipes/pollo.jpg" alt="Descripción de la
+                      imagen">
+                  </div>
+                  <div class="card-details">
+                    <h5>Recipe name</h5>
+                    <p>Category</p>
+                    <p>Time</p>
+                    <p>Difficulty</p>
+                    <div class="text-end">
+                      <button>Recipe details</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </section>
+        <!-- Top 10 end -->
+      </section>
+
+    </main>
+    <footer>
+      <section class="bg-success">
+
+        <div class="container-fluid">
+          <div class="row pt-4 align-items-center">
+            <div class="col-md-4 text-center">
+              <img class="img-fluid" src="./images/logo.png" alt="logo">
+            </div>
+
+            <div class="col-md-4 text-center">
+              <ul class="footer-ul">
+                <h5 class="text-light">Contact us</h5>
+                <li>
+                  <a href="#" class="text-light"><img class="my-2"
+                      src="./images/icons/Phone-light.png" alt="Phone-icon"
+                      width="40">+506 111 111</a>
+                </li>
+                <li>
+                  <a href="#" class="text-light"><img class="my-2"
+                      src="./images/icons/Email-light.png" alt="Email-icon"
+                      width="40">email@mail.com</a>
+                </li>
+                <li>
+                  <a href="#" class="text-light"><img class="my-2"
+                      src="./images/icons/Location-light.png"
+                      alt="Location-icon"
+                      width="40">400m NW bla bla</a>
+                </li>
+              </ul>
+            </div>
+
+            <div class="col-md-4 text-center">
+              <h5 class="text-light">Social media</h5>
+              <ul class="footer-ul">
+                <li>
+                  <a class="text-light footer-a" href="#">
+                    <img class="my-1" src="./images/icons/Facebook-light.png"
+                      alt="Facebook-icon"
+                      width="40">
+                  </a>
                 </li>
 
-                <li class="nav-item px-1 py-1">
-                  <button class="btn btn-warning" aria-current="page">BreakFasts</button>
+                <li>
+                  <a class="text-light footer-a" href="#">
+                    <img class="my-2" src="./images/icons/Instagram-light.png"
+                      alt="Instagram-icon"
+                      width="40">
+                  </a>
                 </li>
 
-                <li class="nav-item px-1 py-1">
-                  <button class="btn btn-warning" aria-current="page">Drinks</button>
-                </li>
-
-                <li class="nav-item px-1 py-1">
-                  <button class="btn btn-warning" aria-current="page">Entrees</button>
-                </li>
-
-                <li class="nav-item px-1 py-1">
-                  <button class="btn btn-warning" aria-current="page">Lunches</button>
-                </li>
-
-                <li class="nav-item px-1 py-1">
-                  <button class="btn btn-warning" aria-current="page">Desserts</button>
-                </li>
-
-                <li class="nav-item px-1 py-1">
-                  <button class="btn btn-warning" aria-current="page">Soups</button>
-                </li>
+                <li>
+                  <a class="text-light footer-a" href="#">
+                    <img class="my-2" src="./images/icons/Twitter-light.png"
+                      alt="Twitter-icon"
+                      width="40">
+                  </a>
                 </li>
               </ul>
             </div>
 
           </div>
-        </nav>
-      </section>
-      <!-- Filters end -->
-
-      <!-- All recipes  -->
-      <section class="row">
-        <div class="col ps-4 mt-3">
-          <h2>Recipes</h2>
-        </div>
-        <div class="row">
-          <div class="col-md-4 my-3">
-            <div class="card">
-              <div class="card-content">
-                <div class="card-image">
-                  <img src="./images/recipes/pollo.jpg" alt="Descripción de la
-                    imagen">
-                </div>
-                <div class="card-details">
-                  <h5>Recipe name</h5>
-                  <p>Category</p>
-                  <p>Time</p>
-                  <p>Difficulty</p>
-                  <div class="text-end">
-                    <button>Recipe details</button>
-                  </div>
-                </div>
-              </div>
+          <hr class="bg-light">
+          <div class="row justify-content-center pb-4">
+            <div class="col-auto">
+              <p class="text-center text-light m-0">© 2023 Foodie's. All Rights
+                Reserved.</p>
             </div>
           </div>
         </div>
       </section>
-      <!-- All recipes end -->
-
-      <!-- Top 10 -->
-      <section class="row">
-        <div class="col ps-4 pt-3">
-          <h2>Top 10</h2>
-        </div>
-        <div class="row">
-          <div class="col-md-4 my-3">
-            <div class="card">
-              <div class="card-content">
-                <div class="card-image">
-                  <img src="./images/recipes/pollo.jpg" alt="Descripción de la
-                    imagen">
-                </div>
-                <div class="card-details">
-                  <h5>Recipe name</h5>
-                  <p>Category</p>
-                  <p>Time</p>
-                  <p>Difficulty</p>
-                  <div class="text-end">
-                    <button>Recipe details</button>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4 my-3">
-            <div class="card">
-              <div class="card-content">
-                <div class="card-image">
-                  <img src="./images/recipes/pollo.jpg" alt="Descripción de la
-                    imagen">
-                </div>
-                <div class="card-details">
-                  <h5>Recipe name</h5>
-                  <p>Category</p>
-                  <p>Time</p>
-                  <p>Difficulty</p>
-                  <div class="text-end">
-                    <button>Recipe details</button>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4 my-3">
-            <div class="card">
-              <div class="card-content">
-                <div class="card-image">
-                  <img src="./images/recipes/pollo.jpg" alt="Descripción de la
-                    imagen">
-                </div>
-                <div class="card-details">
-                  <h5>Recipe name</h5>
-                  <p>Category</p>
-                  <p>Time</p>
-                  <p>Difficulty</p>
-                  <div class="text-end">
-                    <button>Recipe details</button>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4 my-3">
-            <div class="card">
-              <div class="card-content">
-                <div class="card-image">
-                  <img src="./images/recipes/pollo.jpg" alt="Descripción de la
-                    imagen">
-                </div>
-                <div class="card-details">
-                  <h5>Recipe name</h5>
-                  <p>Category</p>
-                  <p>Time</p>
-                  <p>Difficulty</p>
-                  <div class="text-end">
-                    <button>Recipe details</button>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4 my-3">
-            <div class="card">
-              <div class="card-content">
-                <div class="card-image">
-                  <img src="./images/recipes/pollo.jpg" alt="Descripción de la
-                    imagen">
-                </div>
-                <div class="card-details">
-                  <h5>Recipe name</h5>
-                  <p>Category</p>
-                  <p>Time</p>
-                  <p>Difficulty</p>
-                  <div class="text-end">
-                    <button>Recipe details</button>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4 my-3">
-            <div class="card">
-              <div class="card-content">
-                <div class="card-image">
-                  <img src="./images/recipes/pollo.jpg" alt="Descripción de la
-                    imagen">
-                </div>
-                <div class="card-details">
-                  <h5>Recipe name</h5>
-                  <p>Category</p>
-                  <p>Time</p>
-                  <p>Difficulty</p>
-                  <div class="text-end">
-                    <button>Recipe details</button>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4 my-3">
-            <div class="card">
-              <div class="card-content">
-                <div class="card-image">
-                  <img src="./images/recipes/pollo.jpg" alt="Descripción de la
-                    imagen">
-                </div>
-                <div class="card-details">
-                  <h5>Recipe name</h5>
-                  <p>Category</p>
-                  <p>Time</p>
-                  <p>Difficulty</p>
-                  <div class="text-end">
-                    <button>Recipe details</button>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4 my-3">
-            <div class="card">
-              <div class="card-content">
-                <div class="card-image">
-                  <img src="./images/recipes/pollo.jpg" alt="Descripción de la
-                    imagen">
-                </div>
-                <div class="card-details">
-                  <h5>Recipe name</h5>
-                  <p>Category</p>
-                  <p>Time</p>
-                  <p>Difficulty</p>
-                  <div class="text-end">
-                    <button>Recipe details</button>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4 my-3">
-            <div class="card">
-              <div class="card-content">
-                <div class="card-image">
-                  <img src="./images/recipes/pollo.jpg" alt="Descripción de la
-                    imagen">
-                </div>
-                <div class="card-details">
-                  <h5>Recipe name</h5>
-                  <p>Category</p>
-                  <p>Time</p>
-                  <p>Difficulty</p>
-                  <div class="text-end">
-                    <button>Recipe details</button>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4 my-3">
-            <div class="card">
-              <div class="card-content">
-                <div class="card-image">
-                  <img src="./images/recipes/pollo.jpg" alt="Descripción de la
-                    imagen">
-                </div>
-                <div class="card-details">
-                  <h5>Recipe name</h5>
-                  <p>Category</p>
-                  <p>Time</p>
-                  <p>Difficulty</p>
-                  <div class="text-end">
-                    <button>Recipe details</button>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-        </div>
-      </section>
-      <!-- Top 10 end -->
-    </section>
-
-    </main>
-    <footer>
-
     </footer>
 
     <!-- Bootstrap JS  -->
