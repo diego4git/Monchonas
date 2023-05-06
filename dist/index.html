@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -10,7 +9,8 @@
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css"
       rel="stylesheet"
       integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ"
-      crossorigin="anonymous">
+      crossorigin="anonymous"
+      />
     <!-- Bootstrap CSS -->
     <!-- CSS Y SASS -->
     <link rel="stylesheet" href="./css/main.css" />
@@ -20,34 +20,34 @@
 
   <body>
     <header>
-      <!-- Navbar -->
       <nav class="navbar navbar-expand-lg navbar-light bg-success">
         <div class="container-fluid">
-
-          <!-- Logo img  -->
           <a class="navbar-brand" href="#">
-            <img src="./images/logo.png" alt="Logo" width="200">
+            <img src="./images/logo.png" alt="Logo" width="200" />
           </a>
-          <!-- Logo img  end-->
-
-          <!-- Collapse btn -->
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-            data-bs-target="#navbarNav" aria-controls="navbarNav"
-            aria-expanded="false" aria-label="Toggle navigation">
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
-          <!-- Collapse btn end -->
-
-          <!-- List and dropdowns -->
-          <div class="collapse navbar-collapse align-content-end"
-            id="navbarNav">
-            <ul class="navbar-nav">
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
               <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown"
-                  role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                <a
+                  class="nav-link dropdown-toggle text-white"
+                  href="#"
+                  id="occasionsDropdown"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false">
                   Occasions
                 </a>
-                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <ul class="dropdown-menu" aria-labelledby="occasionsDropdown">
                   <li><a class="dropdown-item" href="#">All</a></li>
                   <li><a class="dropdown-item" href="#">Birthdays</a></li>
                   <li><a class="dropdown-item" href="#">Father's Day</a></li>
@@ -59,90 +59,113 @@
                 </ul>
               </li>
               <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown"
-                  role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                <a
+                  class="nav-link dropdown-toggle text-white"
+                  href="#"
+                  id="difficultyDropdown"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false">
                   Difficulty
                 </a>
-                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <ul class="dropdown-menu" aria-labelledby="difficultyDropdown">
                   <li><a class="dropdown-item" href="#">Easy</a></li>
                   <li><a class="dropdown-item" href="#">Medium</a></li>
                   <li><a class="dropdown-item" href="#">Hard</a></li>
                 </ul>
               </li>
               <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown"
-                  role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                <a
+                  class="nav-link dropdown-toggle text-white"
+                  href="#"
+                  id="moreDropdown"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false">
                   More
                 </a>
-                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                  <li><a class="dropdown-item" href="./register.html">Log Up</a></li> <!-- Crear cuenta -->
-                  <li><a class="dropdown-item" href="#">Sing In</a></li> <!-- Iniciar sesion -->
-                  <li><a class="dropdown-item" href="#">Sing out</a></li> <!-- Cerrar sesion -->
+                <ul class="dropdown-menu" aria-labelledby="moreDropdown">
+                  <li>
+                    <a class="dropdown-item" href="./register.html">Sign Up</a>
+                  </li>
+                  <li><a class="dropdown-item" href="#">Sign In</a></li>
+                  <li><a class="dropdown-item" href="#">Sign Out</a></li>
                 </ul>
               </li>
             </ul>
+
+            <form class="d-flex my-2 my-lg-0">
+              <input
+                class="form-control mr-sm-2"
+                type="search"
+                placeholder="Search"
+                aria-label="Search"
+                />
+              <button class="btn btn-danger" type="submit">
+                <img
+                  src="./images/Icons/Search-light.png"
+                  alt="Search"
+                  width="20"
+                  />
+              </button>
+            </form>
           </div>
-          <!-- List and dropdowns end -->
-
-          <!-- Search form -->
-          <form class="d-flex">
-            <input class="form-control me-2" type="search" placeholder="Search"
-              aria-label="Search">
-            <button class="btn btn-danger">
-              <img src="./images/Icons/Search-light.png" alt="Search"
-                width="20">
-
-            </button>
-          </form>
-          <!-- Search form end -->
         </div>
       </nav>
-      <!-- Navbar end -->
-
     </header>
     <main>
-
       <section class="container-fluid bg-light">
         <!-- Filters -->
         <section class="row">
           <nav class="navbar navbar-expand-lg">
             <div class="container-fluid">
-
-              <div class="btn-group btn-group-toggle d-flex flex-wrap"
+              <div
+                class="btn-group btn-group-toggle d-flex flex-wrap"
                 data-toggle="buttons">
                 <ul class="nav nav-pills">
-
                   <li class="nav-item px-1 py-1">
-                    <button class="btn btn-warning" aria-current="page">All</button>
+                    <button class="btn btn-warning" aria-current="page">
+                      All
+                    </button>
                   </li>
 
                   <li class="nav-item px-1 py-1">
-                    <button class="btn btn-warning" aria-current="page">BreakFasts</button>
+                    <button class="btn btn-warning" aria-current="page">
+                      BreakFasts
+                    </button>
                   </li>
 
                   <li class="nav-item px-1 py-1">
-                    <button class="btn btn-warning" aria-current="page">Drinks</button>
+                    <button class="btn btn-warning" aria-current="page">
+                      Drinks
+                    </button>
                   </li>
 
                   <li class="nav-item px-1 py-1">
-                    <button class="btn btn-warning" aria-current="page">Entrees</button>
+                    <button class="btn btn-warning" aria-current="page">
+                      Entrees
+                    </button>
                   </li>
 
                   <li class="nav-item px-1 py-1">
-                    <button class="btn btn-warning" aria-current="page">Lunches</button>
+                    <button class="btn btn-warning" aria-current="page">
+                      Lunches
+                    </button>
                   </li>
 
                   <li class="nav-item px-1 py-1">
-                    <button class="btn btn-warning" aria-current="page">Desserts</button>
+                    <button class="btn btn-warning" aria-current="page">
+                      Desserts
+                    </button>
                   </li>
 
                   <li class="nav-item px-1 py-1">
-                    <button class="btn btn-warning" aria-current="page">Soups</button>
+                    <button class="btn btn-warning" aria-current="page">
+                      Soups
+                    </button>
                   </li>
-
                 </ul>
               </div>
-
             </div>
           </nav>
         </section>
@@ -158,8 +181,12 @@
               <div class="card">
                 <div class="card-content">
                   <div class="card-image">
-                    <img src="./images/recipes/pollo.jpg" alt="Descripción de la
-                      imagen">
+                    <img
+                      src="./images/recipes/pollo.jpg"
+                      alt="Descripción
+                      de la
+                      imagen"
+                      />
                   </div>
                   <div class="card-details">
                     <h5>Recipe name</h5>
@@ -178,7 +205,7 @@
           </div>
         </section>
         <!-- All recipes end -->
-
+        <hr>
         <!-- Top 10 -->
         <section class="row">
           <div class="col ps-4 pt-3">
@@ -189,8 +216,12 @@
               <div class="card">
                 <div class="card-content">
                   <div class="card-image">
-                    <img src="./images/recipes/pollo.jpg" alt="Descripción de la
-                      imagen">
+                    <img
+                      src="./images/recipes/pollo.jpg"
+                      alt="Descripción
+                      de la
+                      imagen"
+                      />
                   </div>
                   <div class="card-details">
                     <h5>Recipe name</h5>
@@ -208,8 +239,12 @@
               <div class="card">
                 <div class="card-content">
                   <div class="card-image">
-                    <img src="./images/recipes/pollo.jpg" alt="Descripción de la
-                      imagen">
+                    <img
+                      src="./images/recipes/pollo.jpg"
+                      alt="Descripción
+                      de la
+                      imagen"
+                      />
                   </div>
                   <div class="card-details">
                     <h5>Recipe name</h5>
@@ -227,8 +262,12 @@
               <div class="card">
                 <div class="card-content">
                   <div class="card-image">
-                    <img src="./images/recipes/pollo.jpg" alt="Descripción de la
-                      imagen">
+                    <img
+                      src="./images/recipes/pollo.jpg"
+                      alt="Descripción
+                      de la
+                      imagen"
+                      />
                   </div>
                   <div class="card-details">
                     <h5>Recipe name</h5>
@@ -246,8 +285,12 @@
               <div class="card">
                 <div class="card-content">
                   <div class="card-image">
-                    <img src="./images/recipes/pollo.jpg" alt="Descripción de la
-                      imagen">
+                    <img
+                      src="./images/recipes/pollo.jpg"
+                      alt="Descripción
+                      de la
+                      imagen"
+                      />
                   </div>
                   <div class="card-details">
                     <h5>Recipe name</h5>
@@ -265,8 +308,12 @@
               <div class="card">
                 <div class="card-content">
                   <div class="card-image">
-                    <img src="./images/recipes/pollo.jpg" alt="Descripción de la
-                      imagen">
+                    <img
+                      src="./images/recipes/pollo.jpg"
+                      alt="Descripción
+                      de la
+                      imagen"
+                      />
                   </div>
                   <div class="card-details">
                     <h5>Recipe name</h5>
@@ -284,8 +331,12 @@
               <div class="card">
                 <div class="card-content">
                   <div class="card-image">
-                    <img src="./images/recipes/pollo.jpg" alt="Descripción de la
-                      imagen">
+                    <img
+                      src="./images/recipes/pollo.jpg"
+                      alt="Descripción
+                      de la
+                      imagen"
+                      />
                   </div>
                   <div class="card-details">
                     <h5>Recipe name</h5>
@@ -303,8 +354,12 @@
               <div class="card">
                 <div class="card-content">
                   <div class="card-image">
-                    <img src="./images/recipes/pollo.jpg" alt="Descripción de la
-                      imagen">
+                    <img
+                      src="./images/recipes/pollo.jpg"
+                      alt="Descripción
+                      de la
+                      imagen"
+                      />
                   </div>
                   <div class="card-details">
                     <h5>Recipe name</h5>
@@ -322,8 +377,12 @@
               <div class="card">
                 <div class="card-content">
                   <div class="card-image">
-                    <img src="./images/recipes/pollo.jpg" alt="Descripción de la
-                      imagen">
+                    <img
+                      src="./images/recipes/pollo.jpg"
+                      alt="Descripción
+                      de la
+                      imagen"
+                      />
                   </div>
                   <div class="card-details">
                     <h5>Recipe name</h5>
@@ -341,8 +400,12 @@
               <div class="card">
                 <div class="card-content">
                   <div class="card-image">
-                    <img src="./images/recipes/pollo.jpg" alt="Descripción de la
-                      imagen">
+                    <img
+                      src="./images/recipes/pollo.jpg"
+                      alt="Descripción
+                      de la
+                      imagen"
+                      />
                   </div>
                   <div class="card-details">
                     <h5>Recipe name</h5>
@@ -360,8 +423,12 @@
               <div class="card">
                 <div class="card-content">
                   <div class="card-image">
-                    <img src="./images/recipes/pollo.jpg" alt="Descripción de la
-                      imagen">
+                    <img
+                      src="./images/recipes/pollo.jpg"
+                      alt="Descripción
+                      de la
+                      imagen"
+                      />
                   </div>
                   <div class="card-details">
                     <h5>Recipe name</h5>
@@ -375,84 +442,71 @@
                 </div>
               </div>
             </div>
-
           </div>
         </section>
         <!-- Top 10 end -->
       </section>
-
     </main>
-    <footer>
-      <section class="bg-success">
 
-        <div class="container-fluid">
-          <div class="row pt-4 align-items-center">
-            <div class="col-md-4 text-center">
-              <img class="img-fluid" src="./images/logo.png" alt="logo">
-            </div>
-
-            <div class="col-md-4 text-center">
-              <ul class="footer-ul">
-                <h5 class="text-light">Contact us</h5>
-                <li>
-                  <a href="#" class="text-light"><img class="my-2"
-                      src="./images/icons/Phone-light.png" alt="Phone-icon"
-                      width="40">+506 111 111</a>
-                </li>
-                <li>
-                  <a href="#" class="text-light"><img class="my-2"
-                      src="./images/icons/Email-light.png" alt="Email-icon"
-                      width="40">email@mail.com</a>
-                </li>
-                <li>
-                  <a href="#" class="text-light"><img class="my-2"
-                      src="./images/icons/Location-light.png"
-                      alt="Location-icon"
-                      width="40">400m NW bla bla</a>
-                </li>
-              </ul>
-            </div>
-
-            <div class="col-md-4 text-center">
-              <h5 class="text-light">Social media</h5>
-              <ul class="footer-ul">
-                <li>
-                  <a class="text-light footer-a" href="#">
-                    <img class="my-1" src="./images/icons/Facebook-light.png"
-                      alt="Facebook-icon"
-                      width="40">
-                  </a>
-                </li>
-
-                <li>
-                  <a class="text-light footer-a" href="#">
-                    <img class="my-2" src="./images/icons/Instagram-light.png"
-                      alt="Instagram-icon"
-                      width="40">
-                  </a>
-                </li>
-
-                <li>
-                  <a class="text-light footer-a" href="#">
-                    <img class="my-2" src="./images/icons/Twitter-light.png"
-                      alt="Twitter-icon"
-                      width="40">
-                  </a>
-                </li>
-              </ul>
-            </div>
-
+    <footer class="bg-success">
+      <div class="container-fluid">
+        <div class="row flex-wrap justify-content-center pt-4 align-items-center">
+    
+          <div class="col-md-4 text-center mb-4">
+            <img class="img-fluid" src="./images/logo.png" alt="logo"/>
           </div>
-          <hr class="bg-light">
-          <div class="row justify-content-center pb-4">
-            <div class="col-auto">
-              <p class="text-center text-light m-0">© 2023 Monchonas. All Rights
-                Reserved.</p>
-            </div>
+    
+          <div class="col-md-4 text-center mb-4">
+            <h5 class="text-light">Social media</h5>
+            <ul class="footer-ul d-flex justify-content-center">
+              <li>
+                <a class="text-light footer-a" href="#">
+                  <img
+                    class="my-1 mx-2"
+                    src="./images/icons/Facebook-light.png"
+                    alt="Facebook-icon"
+                    width="40"
+                    />
+                </a>
+              </li>
+    
+              <li>
+                <a class="text-light footer-a" href="#">
+                  <img
+                    class="my-1 mx-2"
+                    src="./images/icons/Instagram-light.png"
+                    alt="Instagram-icon"
+                    width="40"
+                    />
+                </a>
+              </li>
+    
+              <li>
+                <a class="text-light footer-a" href="#">
+                  <img
+                    class="my-1 mx-2"
+                    src="./images/icons/Twitter-light.png"
+                    alt="Twitter-icon"
+                    width="40"
+                    />
+                </a>
+              </li>
+            </ul>
+          </div>
+          <hr class="bg-light" />
+        <div class="row justify-content-center pb-4">
+          <div class="col-auto">
+            <p class="text-center text-light m-0">
+              © 2023 Monchonas. All Rights Reserved.
+            </p>
           </div>
         </div>
-      </section>
+        </div>
+      </div>
     </footer>
+
+    
+
 
     <!-- Bootstrap JS  -->
     <script
@@ -461,5 +515,4 @@
       crossorigin="anonymous"></script>
     <!-- Bootstrap JS end -->
   </body>
-
 </html>
