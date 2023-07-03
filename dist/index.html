@@ -4,13 +4,21 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&family=Source+Sans+Pro:wght@300;400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Fonts end -->
     <!-- Bootstrap CSS -->
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css"
       rel="stylesheet"
       integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ"
       crossorigin="anonymous"
-      />
+    />
     <!-- Bootstrap CSS -->
     <!-- CSS Y SASS -->
     <link rel="stylesheet" href="./css/main.css" />
@@ -20,10 +28,10 @@
 
   <body>
     <header>
-      <nav class="navbar navbar-expand-lg navbar-light bg-success">
+      <nav class="navbar navbar-expand-lg navbar-light header-bg">
         <div class="container-fluid">
           <a class="navbar-brand" href="#">
-            <img src="./images/logo.png" alt="Logo" width="200" />
+            <img src="./images/Monchonas.jpg" alt="Logo" width="200" />
           </a>
           <button
             class="navbar-toggler"
@@ -32,7 +40,8 @@
             data-bs-target="#navbarNav"
             aria-controls="navbarNav"
             aria-expanded="false"
-            aria-label="Toggle navigation">
+            aria-label="Toggle navigation"
+          >
             <span class="navbar-toggler-icon"></span>
           </button>
           <div class="collapse navbar-collapse" id="navbarNav">
@@ -44,7 +53,8 @@
                   id="occasionsDropdown"
                   role="button"
                   data-bs-toggle="dropdown"
-                  aria-expanded="false">
+                  aria-expanded="false"
+                >
                   Occasions
                 </a>
                 <ul class="dropdown-menu" aria-labelledby="occasionsDropdown">
@@ -65,7 +75,8 @@
                   id="difficultyDropdown"
                   role="button"
                   data-bs-toggle="dropdown"
-                  aria-expanded="false">
+                  aria-expanded="false"
+                >
                   Difficulty
                 </a>
                 <ul class="dropdown-menu" aria-labelledby="difficultyDropdown">
@@ -81,14 +92,17 @@
                   id="moreDropdown"
                   role="button"
                   data-bs-toggle="dropdown"
-                  aria-expanded="false">
+                  aria-expanded="false"
+                >
                   More
                 </a>
                 <ul class="dropdown-menu" aria-labelledby="moreDropdown">
                   <li>
-                    <a class="dropdown-item" href="./register.html">Sign Up</a>
+                    <a class="dropdown-item" href="./Login.html">Log in</a>
                   </li>
-                  <li><a class="dropdown-item" href="#">Sign In</a></li>
+                  <li>
+                    <a class="dropdown-item" href="./SingIn.html">Sign In</a>
+                  </li>
                   <li><a class="dropdown-item" href="#">Sign Out</a></li>
                 </ul>
               </li>
@@ -100,67 +114,307 @@
                 type="search"
                 placeholder="Search"
                 aria-label="Search"
-                />
+              />
               <button class="btn btn-danger" type="submit">
                 <img
                   src="./images/Icons/Search-light.png"
                   alt="Search"
                   width="20"
-                  />
+                />
               </button>
             </form>
           </div>
         </div>
       </nav>
     </header>
+
     <main>
-      <section class="container-fluid bg-light">
+      <section class="container-fluid container-lg bg-light">
+        <!-- Top 10 -->
+        <section class="row">
+          <div class="col ps-4 pt-3">
+            <h2>Top 10</h2>
+          </div>
+          <div class="row">
+            <div class="col-md-4 my-3">
+              <div class="card">
+                <div class="card-content">
+                  <div class="card-image">
+                    <img
+                      src="./images/recipes/pollo.jpg"
+                      alt="Descripción
+                      de la
+                      imagen"
+                    />
+                  </div>
+                  <div class="card-details">
+                    <h5>Recipe name</h5>
+                    <p>Category</p>
+                    <p>Time</p>
+                    <p>Difficulty</p>
+                    <div class="text-end">
+                      <button>Recipe details</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4 my-3">
+              <div class="card">
+                <div class="card-content">
+                  <div class="card-image">
+                    <img
+                      src="./images/recipes/pollo.jpg"
+                      alt="Descripción
+                      de la
+                      imagen"
+                    />
+                  </div>
+                  <div class="card-details">
+                    <h5>Recipe name</h5>
+                    <p>Category</p>
+                    <p>Time</p>
+                    <p>Difficulty</p>
+                    <div class="text-end">
+                      <button>Recipe details</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4 my-3">
+              <div class="card">
+                <div class="card-content">
+                  <div class="card-image">
+                    <img
+                      src="./images/recipes/pollo.jpg"
+                      alt="Descripción
+                      de la
+                      imagen"
+                    />
+                  </div>
+                  <div class="card-details">
+                    <h5>Recipe name</h5>
+                    <p>Category</p>
+                    <p>Time</p>
+                    <p>Difficulty</p>
+                    <div class="text-end">
+                      <button>Recipe details</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4 my-3">
+              <div class="card">
+                <div class="card-content">
+                  <div class="card-image">
+                    <img
+                      src="./images/recipes/pollo.jpg"
+                      alt="Descripción
+                      de la
+                      imagen"
+                    />
+                  </div>
+                  <div class="card-details">
+                    <h5>Recipe name</h5>
+                    <p>Category</p>
+                    <p>Time</p>
+                    <p>Difficulty</p>
+                    <div class="text-end">
+                      <button>Recipe details</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4 my-3">
+              <div class="card">
+                <div class="card-content">
+                  <div class="card-image">
+                    <img
+                      src="./images/recipes/pollo.jpg"
+                      alt="Descripción
+                      de la
+                      imagen"
+                    />
+                  </div>
+                  <div class="card-details">
+                    <h5>Recipe name</h5>
+                    <p>Category</p>
+                    <p>Time</p>
+                    <p>Difficulty</p>
+                    <div class="text-end">
+                      <button>Recipe details</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4 my-3">
+              <div class="card">
+                <div class="card-content">
+                  <div class="card-image">
+                    <img
+                      src="./images/recipes/pollo.jpg"
+                      alt="Descripción
+                      de la
+                      imagen"
+                    />
+                  </div>
+                  <div class="card-details">
+                    <h5>Recipe name</h5>
+                    <p>Category</p>
+                    <p>Time</p>
+                    <p>Difficulty</p>
+                    <div class="text-end">
+                      <button>Recipe details</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4 my-3">
+              <div class="card">
+                <div class="card-content">
+                  <div class="card-image">
+                    <img
+                      src="./images/recipes/pollo.jpg"
+                      alt="Descripción
+                      de la
+                      imagen"
+                    />
+                  </div>
+                  <div class="card-details">
+                    <h5>Recipe name</h5>
+                    <p>Category</p>
+                    <p>Time</p>
+                    <p>Difficulty</p>
+                    <div class="text-end">
+                      <button>Recipe details</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4 my-3">
+              <div class="card">
+                <div class="card-content">
+                  <div class="card-image">
+                    <img
+                      src="./images/recipes/pollo.jpg"
+                      alt="Descripción
+                      de la
+                      imagen"
+                    />
+                  </div>
+                  <div class="card-details">
+                    <h5>Recipe name</h5>
+                    <p>Category</p>
+                    <p>Time</p>
+                    <p>Difficulty</p>
+                    <div class="text-end">
+                      <button>Recipe details</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4 my-3">
+              <div class="card">
+                <div class="card-content">
+                  <div class="card-image">
+                    <img
+                      src="./images/recipes/pollo.jpg"
+                      alt="Descripción
+                      de la
+                      imagen"
+                    />
+                  </div>
+                  <div class="card-details">
+                    <h5>Recipe name</h5>
+                    <p>Category</p>
+                    <p>Time</p>
+                    <p>Difficulty</p>
+                    <div class="text-end">
+                      <button>Recipe details</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4 my-3">
+              <div class="card">
+                <div class="card-content">
+                  <div class="card-image">
+                    <img
+                      src="./images/recipes/pollo.jpg"
+                      alt="Descripción
+                      de la
+                      imagen"
+                    />
+                  </div>
+                  <div class="card-details">
+                    <h5>Recipe name</h5>
+                    <p>Category</p>
+                    <p>Time</p>
+                    <p>Difficulty</p>
+                    <div class="text-end">
+                      <button>Recipe details</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- Top 10 end -->
+        <hr>
         <!-- Filters -->
         <section class="row">
           <nav class="navbar navbar-expand-lg">
             <div class="container-fluid">
               <div
                 class="btn-group btn-group-toggle d-flex flex-wrap"
-                data-toggle="buttons">
+                data-toggle="buttons"
+              >
                 <ul class="nav nav-pills">
                   <li class="nav-item px-1 py-1">
-                    <button class="btn btn-warning" aria-current="page">
-                      All
-                    </button>
+                    <button class="btn-mix" aria-current="page">All</button>
                   </li>
 
                   <li class="nav-item px-1 py-1">
-                    <button class="btn btn-warning" aria-current="page">
+                    <button class="btn-mix" aria-current="page">
                       BreakFasts
                     </button>
                   </li>
 
                   <li class="nav-item px-1 py-1">
-                    <button class="btn btn-warning" aria-current="page">
+                    <button class="btn-mix" aria-current="page">
                       Drinks
                     </button>
                   </li>
 
                   <li class="nav-item px-1 py-1">
-                    <button class="btn btn-warning" aria-current="page">
+                    <button class="btn-mix" aria-current="page">
                       Entrees
                     </button>
                   </li>
 
                   <li class="nav-item px-1 py-1">
-                    <button class="btn btn-warning" aria-current="page">
+                    <button class="btn-mix" aria-current="page">
                       Lunches
                     </button>
                   </li>
 
                   <li class="nav-item px-1 py-1">
-                    <button class="btn btn-warning" aria-current="page">
+                    <button class="btn-mix" aria-current="page">
                       Desserts
                     </button>
                   </li>
 
                   <li class="nav-item px-1 py-1">
-                    <button class="btn btn-warning" aria-current="page">
+                    <button class="btn-mix" aria-current="page">
                       Soups
                     </button>
                   </li>
@@ -170,7 +424,6 @@
           </nav>
         </section>
         <!-- Filters end -->
-
         <!-- All recipes  -->
         <section class="row">
           <div class="col ps-4 mt-3">
@@ -184,9 +437,9 @@
                     <img
                       src="./images/recipes/pollo.jpg"
                       alt="Descripción
-                      de la
-                      imagen"
-                      />
+                              de la
+                              imagen"
+                    />
                   </div>
                   <div class="card-details">
                     <h5>Recipe name</h5>
@@ -205,258 +458,15 @@
           </div>
         </section>
         <!-- All recipes end -->
-        <hr>
-        <!-- Top 10 -->
-        <section class="row">
-          <div class="col ps-4 pt-3">
-            <h2>Top 10</h2>
-          </div>
-          <div class="row">
-            <div class="col-md-4 my-3">
-              <div class="card">
-                <div class="card-content">
-                  <div class="card-image">
-                    <img
-                      src="./images/recipes/pollo.jpg"
-                      alt="Descripción
-                      de la
-                      imagen"
-                      />
-                  </div>
-                  <div class="card-details">
-                    <h5>Recipe name</h5>
-                    <p>Category</p>
-                    <p>Time</p>
-                    <p>Difficulty</p>
-                    <div class="text-end">
-                      <button>Recipe details</button>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="col-md-4 my-3">
-              <div class="card">
-                <div class="card-content">
-                  <div class="card-image">
-                    <img
-                      src="./images/recipes/pollo.jpg"
-                      alt="Descripción
-                      de la
-                      imagen"
-                      />
-                  </div>
-                  <div class="card-details">
-                    <h5>Recipe name</h5>
-                    <p>Category</p>
-                    <p>Time</p>
-                    <p>Difficulty</p>
-                    <div class="text-end">
-                      <button>Recipe details</button>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="col-md-4 my-3">
-              <div class="card">
-                <div class="card-content">
-                  <div class="card-image">
-                    <img
-                      src="./images/recipes/pollo.jpg"
-                      alt="Descripción
-                      de la
-                      imagen"
-                      />
-                  </div>
-                  <div class="card-details">
-                    <h5>Recipe name</h5>
-                    <p>Category</p>
-                    <p>Time</p>
-                    <p>Difficulty</p>
-                    <div class="text-end">
-                      <button>Recipe details</button>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="col-md-4 my-3">
-              <div class="card">
-                <div class="card-content">
-                  <div class="card-image">
-                    <img
-                      src="./images/recipes/pollo.jpg"
-                      alt="Descripción
-                      de la
-                      imagen"
-                      />
-                  </div>
-                  <div class="card-details">
-                    <h5>Recipe name</h5>
-                    <p>Category</p>
-                    <p>Time</p>
-                    <p>Difficulty</p>
-                    <div class="text-end">
-                      <button>Recipe details</button>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="col-md-4 my-3">
-              <div class="card">
-                <div class="card-content">
-                  <div class="card-image">
-                    <img
-                      src="./images/recipes/pollo.jpg"
-                      alt="Descripción
-                      de la
-                      imagen"
-                      />
-                  </div>
-                  <div class="card-details">
-                    <h5>Recipe name</h5>
-                    <p>Category</p>
-                    <p>Time</p>
-                    <p>Difficulty</p>
-                    <div class="text-end">
-                      <button>Recipe details</button>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="col-md-4 my-3">
-              <div class="card">
-                <div class="card-content">
-                  <div class="card-image">
-                    <img
-                      src="./images/recipes/pollo.jpg"
-                      alt="Descripción
-                      de la
-                      imagen"
-                      />
-                  </div>
-                  <div class="card-details">
-                    <h5>Recipe name</h5>
-                    <p>Category</p>
-                    <p>Time</p>
-                    <p>Difficulty</p>
-                    <div class="text-end">
-                      <button>Recipe details</button>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="col-md-4 my-3">
-              <div class="card">
-                <div class="card-content">
-                  <div class="card-image">
-                    <img
-                      src="./images/recipes/pollo.jpg"
-                      alt="Descripción
-                      de la
-                      imagen"
-                      />
-                  </div>
-                  <div class="card-details">
-                    <h5>Recipe name</h5>
-                    <p>Category</p>
-                    <p>Time</p>
-                    <p>Difficulty</p>
-                    <div class="text-end">
-                      <button>Recipe details</button>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="col-md-4 my-3">
-              <div class="card">
-                <div class="card-content">
-                  <div class="card-image">
-                    <img
-                      src="./images/recipes/pollo.jpg"
-                      alt="Descripción
-                      de la
-                      imagen"
-                      />
-                  </div>
-                  <div class="card-details">
-                    <h5>Recipe name</h5>
-                    <p>Category</p>
-                    <p>Time</p>
-                    <p>Difficulty</p>
-                    <div class="text-end">
-                      <button>Recipe details</button>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="col-md-4 my-3">
-              <div class="card">
-                <div class="card-content">
-                  <div class="card-image">
-                    <img
-                      src="./images/recipes/pollo.jpg"
-                      alt="Descripción
-                      de la
-                      imagen"
-                      />
-                  </div>
-                  <div class="card-details">
-                    <h5>Recipe name</h5>
-                    <p>Category</p>
-                    <p>Time</p>
-                    <p>Difficulty</p>
-                    <div class="text-end">
-                      <button>Recipe details</button>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="col-md-4 my-3">
-              <div class="card">
-                <div class="card-content">
-                  <div class="card-image">
-                    <img
-                      src="./images/recipes/pollo.jpg"
-                      alt="Descripción
-                      de la
-                      imagen"
-                      />
-                  </div>
-                  <div class="card-details">
-                    <h5>Recipe name</h5>
-                    <p>Category</p>
-                    <p>Time</p>
-                    <p>Difficulty</p>
-                    <div class="text-end">
-                      <button>Recipe details</button>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
-        <!-- Top 10 end -->
       </section>
     </main>
 
-    <footer class="bg-success">
+    <footer class="footer-bg">
       <div class="container-fluid">
-        <div class="row flex-wrap justify-content-center pt-4 align-items-center">
-    
-          <div class="col-md-4 text-center mb-4">
-            <img class="img-fluid" src="./images/logo.png" alt="logo"/>
-          </div>
-    
-          <div class="col-md-4 text-center mb-4">
+        <div
+          class="row flex-wrap justify-content-center pt-4 align-items-center"
+        >
+          <div class="col text-center">
             <h5 class="text-light">Social media</h5>
             <ul class="footer-ul d-flex justify-content-center">
               <li>
@@ -466,10 +476,10 @@
                     src="./images/icons/Facebook-light.png"
                     alt="Facebook-icon"
                     width="40"
-                    />
+                  />
                 </a>
               </li>
-    
+
               <li>
                 <a class="text-light footer-a" href="#">
                   <img
@@ -477,10 +487,10 @@
                     src="./images/icons/Instagram-light.png"
                     alt="Instagram-icon"
                     width="40"
-                    />
+                  />
                 </a>
               </li>
-    
+
               <li>
                 <a class="text-light footer-a" href="#">
                   <img
@@ -488,31 +498,29 @@
                     src="./images/icons/Twitter-light.png"
                     alt="Twitter-icon"
                     width="40"
-                    />
+                  />
                 </a>
               </li>
             </ul>
           </div>
           <hr class="bg-light" />
-        <div class="row justify-content-center pb-4">
-          <div class="col-auto">
-            <p class="text-center text-light m-0">
-              © 2023 Monchonas. All Rights Reserved.
-            </p>
+          <div class="row justify-content-center pb-4">
+            <div class="col-auto">
+              <p class="text-center text-light m-0">
+                © 2023 Monchonas. All Rights Reserved.
+              </p>
+            </div>
           </div>
-        </div>
         </div>
       </div>
     </footer>
-
-    
-
 
     <!-- Bootstrap JS  -->
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
-      crossorigin="anonymous"></script>
+      crossorigin="anonymous"
+    ></script>
     <!-- Bootstrap JS end -->
   </body>
 </html>

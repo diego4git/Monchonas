@@ -1,4 +1,6 @@
 
+@use '../abstracts/_vars';
+
 .card {
     background-color: #ffffff;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
@@ -41,8 +43,8 @@
   }
   
   .card-details button {
-    background-color: #198754;
-    color: #ffffff;
+    background-color: vars.$clr-orange;
+    color: #000000;
     border: none;
     padding: 10px 20px;
     border-radius: 4px;
@@ -52,5 +54,5 @@
   }
   
   .card-details button:hover {
-    background-color: #28a745;
+    background-color: vars.$clr-orange2;
   }

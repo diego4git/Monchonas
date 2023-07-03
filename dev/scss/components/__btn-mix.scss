@@ -1,0 +1,16 @@
+
+@use '../abstracts/_vars';
+
+
+.btn-mix {
+    background-color: vars.$clr-orange;
+    color: #000000;
+    border: none;
+    border-radius: 4px;
+    font-size: 1em;
+    padding: 7px 10px;
+}
+
+.btn-mix:hover {
+    background-color: vars.$clr-orange2;
+  }

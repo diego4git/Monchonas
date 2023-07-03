@@ -1,3 +1,7 @@
+@use '../abstracts/_vars';
+.footer-bg{
+    background: vars.$clr-black;
+}
 
 .footer-ul {
     list-style: none;

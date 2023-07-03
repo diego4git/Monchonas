@@ -1,7 +1,10 @@
 
 @use './pages/_recet';
-@use './layout/_logo';
 @use './components/_card';
+@use './components/_btn-mix';
+@use './layout/_logo';
+@use './layout/_header';
 @use './layout/_footer';
+@use './layout/_singIn';
 @use './pages/_infoRecipy';
 @use './vendor/bootstrap/bootstrap.scss';

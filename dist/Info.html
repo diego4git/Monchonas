@@ -19,16 +19,11 @@
   </head>
   <body>
     <header>
-      <!-- Navbar -->
-      <nav class="navbar navbar-expand-lg navbar-light bg-success">
+      <nav class="navbar navbar-expand-lg navbar-light header-bg">
         <div class="container-fluid">
-          <!-- Logo img  -->
           <a class="navbar-brand" href="#">
-            <img src="./images/logo.png" alt="Logo" width="200" />
+            <img src="./images/Monchonas.jpg" alt="Logo" width="200" />
           </a>
-          <!-- Logo img  end-->
-
-          <!-- Collapse btn -->
           <button
             class="navbar-toggler"
             type="button"
@@ -36,27 +31,24 @@
             data-bs-target="#navbarNav"
             aria-controls="navbarNav"
             aria-expanded="false"
-            aria-label="Toggle navigation">
+            aria-label="Toggle navigation"
+          >
             <span class="navbar-toggler-icon"></span>
           </button>
-          <!-- Collapse btn end -->
-
-          <!-- List and dropdowns -->
-          <div
-            class="collapse navbar-collapse align-content-end"
-            id="navbarNav">
-            <ul class="navbar-nav">
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
               <li class="nav-item dropdown">
                 <a
-                  class="nav-link dropdown-toggle"
+                  class="nav-link dropdown-toggle text-white"
                   href="#"
-                  id="navbarDropdown1"
+                  id="occasionsDropdown"
                   role="button"
                   data-bs-toggle="dropdown"
-                  aria-expanded="false">
+                  aria-expanded="false"
+                >
                   Occasions
                 </a>
-                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <ul class="dropdown-menu" aria-labelledby="occasionsDropdown">
                   <li><a class="dropdown-item" href="#">All</a></li>
                   <li><a class="dropdown-item" href="#">Birthdays</a></li>
                   <li><a class="dropdown-item" href="#">Father's Day</a></li>
@@ -69,15 +61,16 @@
               </li>
               <li class="nav-item dropdown">
                 <a
-                  class="nav-link dropdown-toggle"
+                  class="nav-link dropdown-toggle text-white"
                   href="#"
-                  id="navbarDropdown2"
+                  id="difficultyDropdown"
                   role="button"
                   data-bs-toggle="dropdown"
-                  aria-expanded="false">
+                  aria-expanded="false"
+                >
                   Difficulty
                 </a>
-                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <ul class="dropdown-menu" aria-labelledby="difficultyDropdown">
                   <li><a class="dropdown-item" href="#">Easy</a></li>
                   <li><a class="dropdown-item" href="#">Medium</a></li>
                   <li><a class="dropdown-item" href="#">Hard</a></li>
@@ -85,50 +78,47 @@
               </li>
               <li class="nav-item dropdown">
                 <a
-                  class="nav-link dropdown-toggle"
+                  class="nav-link dropdown-toggle text-white"
                   href="#"
-                  id="navbarDropdown3"
+                  id="moreDropdown"
                   role="button"
                   data-bs-toggle="dropdown"
-                  aria-expanded="false">
+                  aria-expanded="false"
+                >
                   More
                 </a>
-                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <ul class="dropdown-menu" aria-labelledby="moreDropdown">
                   <li>
-                    <a class="dropdown-item" href="./register.html">Log Up</a>
+                    <a class="dropdown-item" href="./register.html">Sign Up</a>
                   </li>
-                  <!-- Crear cuenta -->
-                  <li><a class="dropdown-item" href="#">Sing In</a></li>
-                  <!-- Iniciar sesion -->
-                  <li><a class="dropdown-item" href="#">Sing out</a></li>
-                  <!-- Cerrar sesion -->
+                  <li>
+                    <a class="dropdown-item" href="./SingIn.html">Sign In</a>
+                  </li>
+                  <li><a class="dropdown-item" href="#">Sign Out</a></li>
                 </ul>
               </li>
             </ul>
-          </div>
-          <!-- List and dropdowns end -->
 
-          <!-- Search form -->
-          <form class="d-flex">
-            <input
-              class="form-control me-2"
-              type="search"
-              placeholder="Search"
-              aria-label="Search"
+            <form class="d-flex my-2 my-lg-0">
+              <input
+                class="form-control mr-sm-2"
+                type="search"
+                placeholder="Search"
+                aria-label="Search"
               />
-            <button class="btn btn-danger">
-              <img
-                src="./images/Icons/Search-light.png"
-                alt="Search"
-                width="20"
+              <button class="btn btn-danger" type="submit">
+                <img
+                  src="./images/Icons/Search-light.png"
+                  alt="Search"
+                  width="20"
                 />
-            </button>
-          </form>
-          <!-- Search form end -->
+              </button>
+            </form>
+          </div>
         </div>
       </nav>
-      <!-- Navbar end -->
     </header>
+
     <main>
       <div class="container my-5">
         <div class="card-header rounded-3 shadow-lg pt-3 ps-3">
@@ -145,6 +135,8 @@
                   <li><span>Occasion:</span> Family dinner</li>
                   <li><span>Featured:</span> Yes</li>
                   <li><span>Likes:</span> 50</li>
+                  <button class="btn-mix">Like</button>
+                  <button class="btn-mix">Unlike</button>
                 </ul>
               </div>
               <div class="col-lg-5">
@@ -193,81 +185,48 @@
           </div>
         </div>
     </main>
-    <footer>
-      <section class="bg-success">
-        <div class="container-fluid">
-          <div class="row pt-4 align-items-center">
-            <div class="col-md-4 text-center">
-              <img class="img-fluid" src="./images/logo.png" alt="logo" />
-            </div>
 
-            <div class="col-md-4 text-center">
-              <ul class="footer-ul">
-                <h5 class="text-light">Contact us</h5>
-                <li>
-                  <a href="#" class="text-light"><img
-                      class="my-2"
-                      src="./images/icons/Phone-light.png"
-                      alt="Phone-icon"
-                      width="40"
-                      />+506 111 111</a>
-                </li>
-                <li>
-                  <a href="#" class="text-light"><img
-                      class="my-2"
-                      src="./images/icons/Email-light.png"
-                      alt="Email-icon"
-                      width="40"
-                      />email@mail.com</a>
-                </li>
-                <li>
-                  <a href="#" class="text-light"><img
-                      class="my-2"
-                      src="./images/icons/Location-light.png"
-                      alt="Location-icon"
-                      width="40"
-                      />400m NW bla bla</a>
-                </li>
-              </ul>
-            </div>
+    <footer class="footer-bg">
+      <div class="container-fluid">
+        <div
+          class="row flex-wrap justify-content-center pt-4 align-items-center"
+        >
+          <div class="col text-center">
+            <h5 class="text-light">Social media</h5>
+            <ul class="footer-ul d-flex justify-content-center">
+              <li>
+                <a class="text-light footer-a" href="#">
+                  <img
+                    class="my-1 mx-2"
+                    src="./images/icons/Facebook-light.png"
+                    alt="Facebook-icon"
+                    width="40"
+                  />
+                </a>
+              </li>
 
-            <div class="col-md-4 text-center">
-              <h5 class="text-light">Social media</h5>
-              <ul class="footer-ul">
-                <li>
-                  <a class="text-light footer-a" href="#">
-                    <img
-                      class="my-1"
-                      src="./images/icons/Facebook-light.png"
-                      alt="Facebook-icon"
-                      width="40"
-                      />
-                  </a>
-                </li>
+              <li>
+                <a class="text-light footer-a" href="#">
+                  <img
+                    class="my-1 mx-2"
+                    src="./images/icons/Instagram-light.png"
+                    alt="Instagram-icon"
+                    width="40"
+                  />
+                </a>
+              </li>
 
-                <li>
-                  <a class="text-light footer-a" href="#">
-                    <img
-                      class="my-2"
-                      src="./images/icons/Instagram-light.png"
-                      alt="Instagram-icon"
-                      width="40"
-                      />
-                  </a>
-                </li>
-
-                <li>
-                  <a class="text-light footer-a" href="#">
-                    <img
-                      class="my-2"
-                      src="./images/icons/Twitter-light.png"
-                      alt="Twitter-icon"
-                      width="40"
-                      />
-                  </a>
-                </li>
-              </ul>
-            </div>
+              <li>
+                <a class="text-light footer-a" href="#">
+                  <img
+                    class="my-1 mx-2"
+                    src="./images/icons/Twitter-light.png"
+                    alt="Twitter-icon"
+                    width="40"
+                  />
+                </a>
+              </li>
+            </ul>
           </div>
           <hr class="bg-light" />
           <div class="row justify-content-center pb-4">
@@ -278,7 +237,7 @@
             </div>
           </div>
         </div>
-      </section>
+      </div>
     </footer>
 
     <!-- Bootstrap JS  -->

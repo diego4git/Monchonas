@@ -1,0 +1,12 @@
+.btn-mix {
+  background-color: #e89015;
+  color: #000000;
+  border: none;
+  border-radius: 4px;
+  font-size: 1em;
+  padding: 10px 15px;
+}
+
+.btn-mix:hover {
+  background-color: #e8b315;
+}
