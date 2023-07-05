@@ -18,7 +18,7 @@ class Api {
 								image: 	"http://interactivas3.test/storage/imgs/"+receta.image,
 								name: receta.name,
 								category: receta.category,
-								time: receta.time,
+								likes: receta.likes,
 								level: receta.level,
 							})
 						})
@@ -27,6 +27,19 @@ class Api {
 					.catch((err) => {
 						reject(err)
 					})
+		})
+	}
+
+	detail(id){
+		return new Promise((resolve, reject) => {
+			this.axiosInstance
+				.get('recipe/'+id)
+				.then((response) => {
+					resolve(response.data);
+				})
+				.catch((err) => {
+					reject(err)
+				})
 		})
 	}
 

@@ -1,25 +1,32 @@
-app.component('recipe-card', {
-	props: {
-		image: {
-			type: String,
-		},
-		name: {
-			type: String,
-		},
-		category: {
-			type: String,
-		},
-		time: {
-			type: String,
-		},
-		dificulty: {
-			type: String,
-		},
-	},
-	methods: {},
-	template:
-		/* html */
-		`
+app.component("recipe-card", {
+  props: {
+    id: {
+      type: Number,
+    },
+    image: {
+      type: String,
+    },
+    name: {
+      type: String,
+    },
+    category: {
+      type: String,
+    },
+    likes: {
+      type: Number
+    },
+    level: {
+      type: String,
+    },
+  },
+  methods: {
+    recipeDetail() {
+      this.$emit("toDetail", this.id);
+    },
+  },
+  template:
+    /* html */
+    `
     <div class="card">
         <div class="card-content">
             <div class="card-image">
@@ -28,13 +35,13 @@ app.component('recipe-card', {
             <div class="card-details">
                 <h5>{{ name }}</h5>
                 <p>{{ category }}</p>
-                <p>{{ time }}</p>
-                <p>{{ dificulty }}</p>
+                <p>Likes: {{likes}}</p>
+                <p>{{ level }}</p>
                 <div class="text-end">
-                    <button>Recipe details</button>
+                    <button v-on:click="recipeDetail">Recipe details</button>
                 </div>
             </div>
         </div>
     </div>
     `,
-})
+});

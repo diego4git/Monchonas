@@ -24,94 +24,30 @@
           <a class="navbar-brand" href="#">
             <img src="./images/Monchonas.jpg" alt="Logo" width="200" />
           </a>
-          <button
-            class="navbar-toggler"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarNav"
-            aria-controls="navbarNav"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
           <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav ms-auto">
-              <li class="nav-item dropdown">
-                <a
-                  class="nav-link dropdown-toggle text-white"
-                  href="#"
-                  id="occasionsDropdown"
-                  role="button"
-                  data-bs-toggle="dropdown"
-                  aria-expanded="false"
-                >
-                  Occasions
-                </a>
-                <ul class="dropdown-menu" aria-labelledby="occasionsDropdown">
-                  <li><a class="dropdown-item" href="#">All</a></li>
-                  <li><a class="dropdown-item" href="#">Birthdays</a></li>
-                  <li><a class="dropdown-item" href="#">Father's Day</a></li>
-                  <li><a class="dropdown-item" href="#">Mother's Day</a></li>
-                  <li><a class="dropdown-item" href="#">Children's Day</a></li>
-                  <li><a class="dropdown-item" href="#">Christmas</a></li>
-                  <li><a class="dropdown-item" href="#">Holly Week</a></li>
-                  <li><a class="dropdown-item" href="#">Summer</a></li>
-                </ul>
+              <li class="nav-item">
+                <a class="nav-link text-light" href="#">Profile</a>
               </li>
-              <li class="nav-item dropdown">
-                <a
-                  class="nav-link dropdown-toggle text-white"
-                  href="#"
-                  id="difficultyDropdown"
-                  role="button"
-                  data-bs-toggle="dropdown"
-                  aria-expanded="false"
-                >
-                  Difficulty
-                </a>
-                <ul class="dropdown-menu" aria-labelledby="difficultyDropdown">
-                  <li><a class="dropdown-item" href="#">Easy</a></li>
-                  <li><a class="dropdown-item" href="#">Medium</a></li>
-                  <li><a class="dropdown-item" href="#">Hard</a></li>
-                </ul>
+              <li class="nav-item">
+                <a class="nav-link text-light" href="./Login.html">Log in</a>
               </li>
-              <li class="nav-item dropdown">
-                <a
-                  class="nav-link dropdown-toggle text-white"
-                  href="#"
-                  id="moreDropdown"
-                  role="button"
-                  data-bs-toggle="dropdown"
-                  aria-expanded="false"
-                >
-                  More
-                </a>
-                <ul class="dropdown-menu" aria-labelledby="moreDropdown">
-                  <li>
-                    <a class="dropdown-item" href="./register.html">Sign Up</a>
-                  </li>
-                  <li>
-                    <a class="dropdown-item" href="./SingIn.html">Sign In</a>
-                  </li>
-                  <li><a class="dropdown-item" href="#">Sign Out</a></li>
-                </ul>
+              <li class="nav-item">
+                <a class="nav-link text-light" href="./SingIn.html">Sign In</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-light" href="#">Sign Out</a>
               </li>
             </ul>
-
+  
             <form class="d-flex my-2 my-lg-0">
-              <input
-                class="form-control mr-sm-2"
-                type="search"
-                placeholder="Search"
-                aria-label="Search"
-              />
+              <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search" />
               <button class="btn btn-danger" type="submit">
-                <img
-                  src="./images/Icons/Search-light.png"
-                  alt="Search"
-                  width="20"
-                />
+                <img src="./images/Icons/Search-light.png" alt="Search" width="20" />
               </button>
             </form>
           </div>
@@ -119,70 +55,9 @@
       </nav>
     </header>
 
-    <main>
+    <main id="app">
       <div class="container my-5">
-        <div class="card-header rounded-3 shadow-lg pt-3 ps-3">
-            <div class="row">
-              <div class="col-lg-7">
-                <h2>Recipe name</h2>
-                <ul class="recipe-details">
-                  <li><span>Preparation time:</span> 30 min</li>
-                  <li><span>Cooking time:</span> 1 hour</li>
-                  <li><span>Total time:</span> 1 hour 30 min</li>
-                  <li><span>Portions:</span> 4</li>
-                  <li><span>Level:</span> Intermediate</li>
-                  <li><span>Category:</span> Main dish</li>
-                  <li><span>Occasion:</span> Family dinner</li>
-                  <li><span>Featured:</span> Yes</li>
-                  <li><span>Likes:</span> 50</li>
-                  <button class="btn-mix">Like</button>
-                  <button class="btn-mix">Unlike</button>
-                </ul>
-              </div>
-              <div class="col-lg-5">
-                <div class="img-fluid">
-                  <img width="300" src="./images/recipes/pollo.jpg" alt="chicken-img">
-                </div>
-              </div>
-            </div>
-            <div class="row mt-5">
-              <div class="col-12">
-                <h3>Description</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce ac
-                  massa vel sapien venenatis faucibus. Fusce vel velit ut augue
-                  malesuada finibus. Sed congue, enim id consectetur elementum, arcu
-                  orci tincidunt nisl, vitae faucibus quam est in ex. Integer sit
-                  amet ex a urna fringilla bibendum. Aliquam eget arcu euismod,
-                  vulputate ipsum eu, fermentum arcu. Sed non justo non eros
-                  porttitor bibendum. Donec tincidunt nisi id elit mollis ultrices.</p>
-              </div>
-            </div>
-            <div class="row mt-5">
-              <div class="col-12">
-                <h3>Ingredients</h3>
-                <ul>
-                  <li>Ingredient 1</li>
-                  <li>Ingredient 2</li>
-                  <li>Ingredient 3</li>
-                  <li>Ingredient 4</li>
-                  <li>Ingredient 5</li>
-                </ul>
-              </div>
-            </div>
-            <div class="row mt-5">
-              <div class="col-12">
-                <h3>Instructions</h3>
-                <ol>
-                  <li>Step 1</li>
-                  <li>Step 2</li>
-                  <li>Step 3</li>
-                  <li>Step 4</li>
-                  <li>Step 5</li>
-                </ol>
-              </div>
-          </div>
-
-          </div>
+        <Recipe-detail></Recipe-detail>
         </div>
     </main>
 
@@ -246,5 +121,25 @@
       integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
       crossorigin="anonymous"></script>
     <!-- Bootstrap JS end -->
+
+     <!-- VueJS -->
+  <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+
+  <script src="https://unpkg.com/mitt/dist/mitt.umd.js"></script>
+
+  <!-- AXIOS API JS -->
+  <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+  <!-- AXIOS API JS end -->
+
+  <!-- main script -->
+  <script src="./js/api.js"></script>
+  <script src="./js/main.js"></script>
+  <script src="./js/components/RecipeCard.js"></script>
+  <script src="./js/components/RecipeDetail.js"></script>
+
+  <script>
+    const mountedApp = app.mount('#app')
+  </script>
+
   </body>
 </html>
