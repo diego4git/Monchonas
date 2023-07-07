@@ -6,6 +6,19 @@ class Api {
 		})
 	}
 
+	all() {
+		return new Promise((resolve, reject) => {
+			this.axiosInstance
+				.get('all')
+				.then((response) => {
+					resolve(response.data)
+				})
+				.catch((err) => {
+					reject(err)
+				})
+		})
+	}
+
 	top10() {
 		return new Promise((resolve, reject) => {
 			const diezRecetas = []
@@ -30,6 +43,21 @@ class Api {
 		})
 	}
 
+	//al hacerle click a un boton llena un arreglo con las recetas que coincidan con la categoria elegia para posteriormente mostrarlos
+	filterByCategory(id){
+		return new Promise((resolve, reject) => {
+			this.axiosInstance
+			.get("filterby/category/"+id)
+			.then((response) => {
+				resolve(response.data)
+			})
+			.catch((err) => {
+				reject(err)
+			})
+		})
+	}
+
+	// Para cargar el detalle
 	detail(id){
 		return new Promise((resolve, reject) => {
 			this.axiosInstance
@@ -43,28 +71,32 @@ class Api {
 		})
 	}
 
-	filterByCategory(category) {
+	//carga los botones dependiendo la cantidad de categorias
+	filterButtons() {
 		return new Promise((resolve, reject) => {
-			const recetas = []
 			this.axiosInstance
-				.get('filterby/level/1' + category)
+				.get('categories')
 				.then((response) => {
-					response.data.meals.forEach((receta) => {
-						recetas.push({
-							id: receta.idMeal,
-							image: receta.strMealThumb,
-							name: receta.strMeal,
-							category: 'Seafood',
-							time: '20 min',
-							level: 'Easy',
-						})
-					})
+					resolve(response.data);
 				})
 				.catch((err) => {
 					reject(err)
 				})
-			resolve(recetas)
 		})
+	}
+
+	//ayuda a buscar por nombre las recetas desde el header
+	searchByName(name) {
+		return new Promise((resolve, reject) => {
+			this.axiosInstance
+				.get('searchbyname/' + name)
+				.then((response) => {
+						resolve(response.data);
+				})
+				.catch((err) => {
+					reject(err)
+				})
+		});
 	}
 }
 

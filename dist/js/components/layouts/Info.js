@@ -44,7 +44,7 @@ app.component("page-info", {
     /* html */
     `
     <div class="container my-5">
-      <button @click="change" type="button" class="btn btn-danger">Back</button>
+      <button v-on:click="change" type="button" class="btn btn-danger">Back</button>
     </div>
         <main id="app" data-v-app="">
           <div class="container my-5">
@@ -54,14 +54,14 @@ app.component("page-info", {
                   <h2>{{ recipe.name }}</h2>
                   <ul class="recipe-details">
                     <li><span>Preparation time: {{ recipe.preparation_time }}</span> </li>
-                    <li><span>Cooking time: {{ recipe.cocking_time }}</span> </li>
+                    <li><span>Cooking time: {{ recipe.cooking_time }}</span> </li>
                     <li><span>Total time: {{ recipe.total_time }}</span> </li>
                     <li><span>Portions: {{ recipe.portions }}</span> </li>
                     <li><span>Level: {{ recipe.level }}</span> </li>
                     <li><span>Category: {{ recipe.category }}</span> </li>
                     <li><span>Occasion: {{ recipe.occasion }}</span> </li>
                     <li><span>Likes: {{ recipe.likes }}</span> </li>
-                    <button class="btn-mix">Like</button>
+                    <button class="btn-mix me-2">Like</button>
                     <button class="btn-mix">Save</button>
                   </ul>
                 </div>
@@ -94,6 +94,13 @@ app.component("page-info", {
                 </div>
               </div>
               <div class="row">
+
+                <div class="row">
+                    <div class="col text-center">
+                      <h2>Related recipes</h2>
+                    </div>
+                </div>
+
                 <div v-for="(recipe, index) in related" class="col-md-4 my-3">
                   <recipe-card v-on:toDetail="openDetail(recipe.id)" :id="recipe.id" :image="'http://interactivas3.test/storage/imgs/'+recipe.image" :name="recipe.name" :category="recipe.category" :likes="recipe.likes" :time="recipe.time" :level="recipe.level"></recipe-card>
                 </div>

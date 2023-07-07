@@ -2,6 +2,8 @@ app.component("page-index", {
   data() {
     return {
       recipes: [],
+      recipesByCategory: [],
+      filterButtons: []
     };
   },
 
@@ -15,6 +17,18 @@ app.component("page-index", {
         });
       })
       .catch();
+    api
+      .filterButtons()
+      .then((data) =>{
+        this.filterButtons = data;
+      })
+      .catch();
+    api
+      .all()
+      .then((data) =>{
+        this.recipesByCategory = data;
+      })
+      .catch();
   },
   props: {},
   methods: {
@@ -25,6 +39,22 @@ app.component("page-index", {
           id: id,
         },
       });
+    },
+    onClickSelectAll() {
+      api
+        .all()
+        .then((data) => {
+          this.recipesByCategory = data;
+        })
+        .catch();
+    },
+    onClickSelectedCategory(id) {
+      api
+        .filterByCategory(id)
+        .then((data) => {
+          this.recipesByCategory = data;
+        })
+        .catch();
     },
   },
   template:
@@ -53,11 +83,11 @@ app.component("page-index", {
             <div class="btn-group btn-group-toggle d-flex flex-wrap" data-toggle="buttons">
               <ul class="nav nav-pills">
                 <li class="nav-item px-1 py-1">
-                  <button class="btn-mix" aria-current="page">All</button>
-                  </li>
+                  <button v-on:click="onClickSelectAll()" class="btn-mix" aria-current="page">All</button>
+                </li>
                   
-                  <li v-for="(category, index) in categories" class="nav-item">
-                  <button v-on:selectedcategory="onClickSelectedCategory(category.name)" class="btn-mix" aria-current="page"> {{ category.name }}</button>
+                <li v-for="(button) in filterButtons" class="nav-item px-1 py-1">
+                  <button v-on:click="onClickSelectedCategory(button.id)" class="btn-mix" aria-current="page"> {{ button.category }}</button>
                 </li>
                 
               </ul>
@@ -72,33 +102,9 @@ app.component("page-index", {
           <h2>Recipes</h2>
         </div>
         <div class="row">
-          <div class="col-md-4 my-3">
-            <div class="card">
-              <div class="card-content">
-                <div class="card-image">
-                  <img src="./images/recipes/pollo.jpg" alt="Descripción
-                              de la
-                              imagen" />
-                </div>
-                <div class="card-details">
-                  <h5>Recipe name</h5>
-                  <p>Category</p>
-                  <p>Time</p>
-                  <p>Difficulty</p>
-                  <div class="text-end">
-                    
-                      <button @click="openDetail(1)">Recipe details</button>
-                    
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <recipe-card :image="'./images/recipes/pollo.jpg'" :name="'pollo'" :category="'pollo'" :time="'pollo'" :dificulty="'pollo'">
-
-            </recipe-card>
-
-          </div>
+        <div v-for="(recipe) in recipesByCategory" class="col-md-4 my-3">
+        <recipe-card v-on:toDetail="openDetail" :id="recipe.id" :image="'http://interactivas3.test/storage/imgs/'+recipe.image" :name="recipe.name" :category="recipe.category" :likes="recipe.likes" :time="recipe.time" :level="recipe.level"></recipe-card>
+      </div>
         </div>
       </section>
       <!-- All recipes end -->

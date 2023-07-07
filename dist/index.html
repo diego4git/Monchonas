@@ -26,8 +26,9 @@
     <title>Monchonas</title>
   </head>
 
-  <body>
-    <header>
+  <body >
+    <section id="app">
+    <!-- <header>
       <nav class="navbar navbar-expand-lg navbar-light header-bg">
         <div class="container-fluid">
           <button v-on:click="changePageF({page:'index'})" class="navbar-brand">
@@ -62,19 +63,23 @@
 
             <form class="d-flex my-2 my-lg-0">
               <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search" />
-              <button class="btn btn-danger" type="submit">
+              <button v-on:click="changePageF({page:'searchby'})" class="btn btn-danger" type="submit">
                 <img src="./images/Icons/Search-light.png" alt="Search" width="20" />
               </button>
             </form>
           </div>
         </div>
       </nav>
-    </header>
+    </header> -->
 
-    <main id="app">
+    <page-header v-on:change-page="changePageF"></page-header>
+
+    <main>
       <page-index v-on:change-page="changePageF" v-if="this.page=='index'"></page-index>
       <page-info v-on:change-page="changePageF" v-if="this.page=='info'" :id="args.id"></page-info>
+      <search-by v-on:change-page="changePageF" v-if="this.page=='searchBy'" :name="args.name"></search-by>
     </main>
+  </section>
 
     <footer class="footer-bg">
       <div class="container-fluid">
@@ -135,6 +140,8 @@
     <script src="./js/components/RecipeDetail.js"></script>
     <script src="./js/components/layouts/Index.js"></script>
     <script src="./js/components/layouts/Info.js"></script>
+    <script src="./js/components/layouts/searchBy.js"></script>
+    <script src="./js/components/layouts/header.js"></script>
 
     <script>
       const mountedApp = app.mount("#app");
